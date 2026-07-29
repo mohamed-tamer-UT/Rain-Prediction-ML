@@ -298,6 +298,16 @@ A complete Machine Learning project developed during the NTI Creativa Innovation
 
 ## 🚀 Live Demo
 
+---
+
+## 📂 Dataset
+
+This project is built using the **WeatherAUS** dataset.
+
+**Dataset Source:**
+https://www.kaggle.com/datasets/trisha2094/weatheraus
+
+The dataset contains historical daily weather observations collected from multiple weather stations across Australia and is used to predict whether it will rain on the following day (`RainTomorrow`). :contentReference[oaicite:0]{index=0}
 👉 **Live Application**
 
 https://rain-prediction-ml-w4kov8lxpkvufsad3pnymf.streamlit.app/
