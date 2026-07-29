@@ -289,3 +289,17 @@ RainPrediction_Documentation.pdf
 # ⭐ Support
 
 If you found this project useful, consider giving the repository a ⭐ on GitHub.
+
+---
+
+# 🌧️ Rain Prediction ML
+
+A complete Machine Learning project developed during the NTI Creativa Innovation Hub Program.
+
+## 🚀 Live Demo
+
+👉 **Live Application**
+
+https://rain-prediction-ml-w4kov8lxpkvufsad3pnymf.streamlit.app/
+
+---
