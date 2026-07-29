@@ -1,0 +1,378 @@
+{
+  "numerical_columns": [
+    "MinTemp",
+    "MaxTemp",
+    "Rainfall",
+    "Evaporation",
+    "Sunshine",
+    "WindGustSpeed",
+    "WindSpeed9am",
+    "WindSpeed3pm",
+    "Humidity9am",
+    "Humidity3pm",
+    "Pressure9am",
+    "Pressure3pm",
+    "Cloud9am",
+    "Cloud3pm",
+    "Temp9am",
+    "Temp3pm",
+    "TempDifference",
+    "HumidityDifference",
+    "PressureDifference",
+    "WindSpeedDifference"
+  ],
+  "categorical_columns": [
+    "Location",
+    "WindGustDir",
+    "WindDir9am",
+    "WindDir3pm",
+    "RainToday"
+  ],
+  "clip_bounds": {
+    "MinTemp": [
+      -6.200000000000001,
+      30.6
+    ],
+    "MaxTemp": [
+      2.4499999999999975,
+      43.65
+    ],
+    "Rainfall": [
+      -0.8999999999999999,
+      1.5
+    ],
+    "Evaporation": [
+      -4.600000000000001,
+      14.600000000000001
+    ],
+    "Sunshine": [
+      -3.6499999999999986,
+      19.15
+    ],
+    "WindGustSpeed": [
+      5.5,
+      73.5
+    ],
+    "WindSpeed9am": [
+      -11.0,
+      37.0
+    ],
+    "WindSpeed3pm": [
+      -3.5,
+      40.5
+    ],
+    "Humidity9am": [
+      18.0,
+      122.0
+    ],
+    "Humidity3pm": [
+      -6.5,
+      109.5
+    ],
+    "Pressure9am": [
+      998.9000000000001,
+      1036.5
+    ],
+    "Pressure3pm": [
+      996.25,
+      1034.25
+    ],
+    "Cloud9am": [
+      -8.0,
+      16.0
+    ],
+    "Cloud3pm": [
+      -5.5,
+      14.5
+    ],
+    "Temp9am": [
+      -1.6500000000000004,
+      35.550000000000004
+    ],
+    "Temp3pm": [
+      1.9000000000000057,
+      41.099999999999994
+    ],
+    "TempDifference": [
+      -3.7500000000000018,
+      25.450000000000003
+    ],
+    "HumidityDifference": [
+      -61.0,
+      27.0
+    ],
+    "PressureDifference": [
+      -7.299999999999727,
+      2.299999999999727
+    ],
+    "WindSpeedDifference": [
+      -15.0,
+      25.0
+    ]
+  },
+  "locations": [
+    "Adelaide",
+    "Albany",
+    "Albury",
+    "AliceSprings",
+    "BadgerysCreek",
+    "Ballarat",
+    "Bendigo",
+    "Brisbane",
+    "Cairns",
+    "Canberra",
+    "Cobar",
+    "CoffsHarbour",
+    "Dartmoor",
+    "Darwin",
+    "GoldCoast",
+    "Hobart",
+    "Katherine",
+    "Launceston",
+    "Melbourne",
+    "MelbourneAirport",
+    "Mildura",
+    "Moree",
+    "MountGambier",
+    "MountGinini",
+    "Newcastle",
+    "Nhil",
+    "NorahHead",
+    "NorfolkIsland",
+    "Nuriootpa",
+    "PearceRAAF",
+    "Penrith",
+    "Perth",
+    "PerthAirport",
+    "Portland",
+    "Richmond",
+    "Sale",
+    "SalmonGums",
+    "Sydney",
+    "SydneyAirport",
+    "Townsville",
+    "Tuggeranong",
+    "Uluru",
+    "WaggaWagga",
+    "Walpole",
+    "Watsonia",
+    "Williamtown",
+    "Witchcliffe",
+    "Wollongong",
+    "Woomera"
+  ],
+  "wind_dirs": null,
+  "categorical_options": {
+    "Location": [
+      "Adelaide",
+      "Albany",
+      "Albury",
+      "AliceSprings",
+      "BadgerysCreek",
+      "Ballarat",
+      "Bendigo",
+      "Brisbane",
+      "Cairns",
+      "Canberra",
+      "Cobar",
+      "CoffsHarbour",
+      "Dartmoor",
+      "Darwin",
+      "GoldCoast",
+      "Hobart",
+      "Katherine",
+      "Launceston",
+      "Melbourne",
+      "MelbourneAirport",
+      "Mildura",
+      "Moree",
+      "MountGambier",
+      "MountGinini",
+      "Newcastle",
+      "Nhil",
+      "NorahHead",
+      "NorfolkIsland",
+      "Nuriootpa",
+      "PearceRAAF",
+      "Penrith",
+      "Perth",
+      "PerthAirport",
+      "Portland",
+      "Richmond",
+      "Sale",
+      "SalmonGums",
+      "Sydney",
+      "SydneyAirport",
+      "Townsville",
+      "Tuggeranong",
+      "Uluru",
+      "WaggaWagga",
+      "Walpole",
+      "Watsonia",
+      "Williamtown",
+      "Witchcliffe",
+      "Wollongong",
+      "Woomera"
+    ],
+    "WindGustDir": [
+      "E",
+      "ENE",
+      "ESE",
+      "N",
+      "NE",
+      "NNE",
+      "NNW",
+      "NW",
+      "S",
+      "SE",
+      "SSE",
+      "SSW",
+      "SW",
+      "W",
+      "WNW",
+      "WSW"
+    ],
+    "WindDir9am": [
+      "E",
+      "ENE",
+      "ESE",
+      "N",
+      "NE",
+      "NNE",
+      "NNW",
+      "NW",
+      "S",
+      "SE",
+      "SSE",
+      "SSW",
+      "SW",
+      "W",
+      "WNW",
+      "WSW"
+    ],
+    "WindDir3pm": [
+      "E",
+      "ENE",
+      "ESE",
+      "N",
+      "NE",
+      "NNE",
+      "NNW",
+      "NW",
+      "S",
+      "SE",
+      "SSE",
+      "SSW",
+      "SW",
+      "W",
+      "WNW",
+      "WSW"
+    ],
+    "RainToday": [
+      "No",
+      "Yes"
+    ]
+  },
+  "numeric_ranges": {
+    "MinTemp": {
+      "min": -6.200000000000001,
+      "max": 30.6,
+      "median": 12.0
+    },
+    "MaxTemp": {
+      "min": 2.4499999999999975,
+      "max": 43.65,
+      "median": 22.6
+    },
+    "Rainfall": {
+      "min": 0.0,
+      "max": 1.5,
+      "median": 0.0
+    },
+    "Evaporation": {
+      "min": 0.0,
+      "max": 14.600000000000001,
+      "median": 4.8
+    },
+    "Sunshine": {
+      "min": 0.0,
+      "max": 14.3,
+      "median": 8.5
+    },
+    "WindGustSpeed": {
+      "min": 6.0,
+      "max": 73.5,
+      "median": 39.0
+    },
+    "WindSpeed9am": {
+      "min": 0.0,
+      "max": 37.0,
+      "median": 13.0
+    },
+    "WindSpeed3pm": {
+      "min": 0.0,
+      "max": 40.5,
+      "median": 19.0
+    },
+    "Humidity9am": {
+      "min": 18.0,
+      "max": 100.0,
+      "median": 70.0
+    },
+    "Humidity3pm": {
+      "min": 0.0,
+      "max": 100.0,
+      "median": 52.0
+    },
+    "Pressure9am": {
+      "min": 998.9000000000001,
+      "max": 1036.5,
+      "median": 1017.6
+    },
+    "Pressure3pm": {
+      "min": 996.25,
+      "max": 1034.25,
+      "median": 1015.2
+    },
+    "Cloud9am": {
+      "min": 0.0,
+      "max": 9.0,
+      "median": 5.0
+    },
+    "Cloud3pm": {
+      "min": 0.0,
+      "max": 9.0,
+      "median": 5.0
+    },
+    "Temp9am": {
+      "min": -1.6500000000000004,
+      "max": 35.550000000000004,
+      "median": 16.7
+    },
+    "Temp3pm": {
+      "min": 1.9000000000000057,
+      "max": 41.099999999999994,
+      "median": 21.1
+    },
+    "TempDifference": {
+      "min": 0.0,
+      "max": 25.450000000000003,
+      "median": 10.499999999999998
+    },
+    "HumidityDifference": {
+      "min": -61.0,
+      "max": 27.0,
+      "median": -17.0
+    },
+    "PressureDifference": {
+      "min": -7.299999999999727,
+      "max": 2.299999999999727,
+      "median": -2.6000000000000227
+    },
+    "WindSpeedDifference": {
+      "min": -15.0,
+      "max": 25.0,
+      "median": 4.0
+    }
+  }
+}
