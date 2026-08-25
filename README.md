@@ -2,48 +2,58 @@
 
 A complete Machine Learning project developed during the **NTI Creativa Innovation Hub Program (Benha Branch)**.
 
-This project predicts whether it will rain tomorrow using historical Australian weather data. The project covers the entire machine learning workflow starting from data preprocessing and exploratory data analysis (EDA), through feature engineering, model training, evaluation, model deployment using Streamlit, and complete project documentation.
+This project predicts whether it will rain tomorrow using historical Australian weather data. It covers the complete machine learning workflow, starting from data preprocessing and exploratory data analysis (EDA), through feature engineering, model training, evaluation, and deployment using Streamlit.
 
 ---
 
-# 📌 Project Overview
+## 🚀 Live Demo
 
-Predicting rainfall is one of the most important weather forecasting tasks because it helps support agriculture, transportation, water resource management, and disaster prevention.
+👉 [Open the Live Application](https://rain-prediction-ml-w4kov8lxpkvufsad3pnymf.streamlit.app/)
 
-In this project, several Machine Learning algorithms were trained and compared to determine the best model for rainfall prediction.
-
-The final model was deployed using **Streamlit** to provide an easy-to-use interactive web application.
+The application allows users to enter weather measurements and receive a prediction of whether it will rain the following day.
 
 ---
 
-# 🎯 Project Objectives
+## 📌 Project Overview
+
+Predicting rainfall is an important weather forecasting task that can support agriculture, transportation, water resource management, and disaster prevention.
+
+In this project, several Machine Learning algorithms were trained and compared to determine a suitable model for rainfall prediction.
+
+The final trained model was deployed using **Streamlit** to provide an interactive web application for real-time inference.
+
+---
+
+## 🎯 Project Objectives
 
 - Clean and preprocess raw weather data.
 - Perform Exploratory Data Analysis (EDA).
 - Engineer meaningful features.
 - Train multiple Machine Learning models.
 - Compare model performance.
-- Select the best model.
+- Select the best-performing model.
 - Save the trained model using Pickle.
 - Build an interactive Streamlit application.
 - Deploy the project for inference.
 
 ---
 
-# 📂 Dataset
+## 📂 Dataset
 
-**Dataset Name**
+### Dataset Name
 
-WeatherAUS Dataset
+**WeatherAUS Dataset**
 
-**Target Variable**
+### Target Variable
 
-RainTomorrow
+**RainTomorrow**
 
 - Yes
 - No
 
-The dataset contains historical Australian weather observations including:
+The dataset contains historical Australian weather observations collected from multiple weather stations.
+
+The observations include:
 
 - Temperature
 - Humidity
@@ -54,11 +64,17 @@ The dataset contains historical Australian weather observations including:
 - Cloud Cover
 - Evaporation
 - Wind Direction
-- and many additional weather attributes.
+- And other weather-related attributes.
+
+### Dataset Source
+
+👉 [WeatherAUS Dataset on Kaggle](https://www.kaggle.com/datasets/trisha2094/weatheraus)
+
+The dataset is not included in this repository. The original dataset can be accessed through the source above.
 
 ---
 
-# 🛠 Technologies Used
+## 🛠 Technologies Used
 
 - Python
 - Pandas
@@ -72,44 +88,50 @@ The dataset contains historical Australian weather observations including:
 
 ---
 
-# ⚙ Machine Learning Pipeline
+# ⚙️ Machine Learning Pipeline
 
-The project follows a complete ML workflow:
+The project follows a complete Machine Learning workflow.
 
 ## 1. Data Cleaning
 
-- Removed duplicated records.
-- Handled missing values.
-- Removed invalid observations.
-- Fixed inconsistent values.
+The data preprocessing stage included:
+
+- Removing duplicated records.
+- Handling missing values.
+- Removing invalid observations.
+- Fixing inconsistent values.
 
 ---
 
 ## 2. Feature Engineering
 
-Several new features were created including:
+Several additional features were created to improve the representation of the weather data, including:
 
 - Pressure Difference
 - Temperature Difference
 - Wind Speed Categories
 - Humidity Indicators
 
-These engineered features improved the predictive performance of the models.
+These engineered features were used to provide additional information to the Machine Learning models.
 
 ---
 
 ## 3. Data Preprocessing
 
-- Numerical feature scaling
-- Categorical encoding
-- Column Transformer pipeline
-- Pipeline integration
+The preprocessing pipeline included:
+
+- Numerical feature scaling.
+- Categorical feature encoding.
+- Column Transformer.
+- Pipeline integration.
+
+Using a preprocessing pipeline helps ensure that the same transformations are applied consistently during training and inference.
 
 ---
 
 ## 4. Model Training
 
-Multiple models were trained and compared including:
+Multiple Machine Learning classification models were trained and compared, including:
 
 - Logistic Regression
 - Decision Tree
@@ -118,11 +140,13 @@ Multiple models were trained and compared including:
 - XGBoost (if available)
 - Other classification models
 
+The models were evaluated using several performance metrics to identify the best-performing model.
+
 ---
 
 ## 5. Model Evaluation
 
-Models were evaluated using:
+The trained models were evaluated using:
 
 - Accuracy
 - Precision
@@ -132,13 +156,15 @@ Models were evaluated using:
 - Confusion Matrix
 - ROC Curve
 
-The best-performing model was selected and saved.
+The best-performing model was selected and saved for deployment.
 
 ---
 
 # 📊 Feature Importance
 
-Feature importance analysis showed that the most influential variables include:
+Feature importance analysis showed that several weather-related variables had a significant contribution to the prediction task.
+
+Important variables included:
 
 1. Humidity at 3 PM
 2. Pressure at 3 PM
@@ -146,35 +172,38 @@ Feature importance analysis showed that the most influential variables include:
 4. Pressure Difference
 5. Sunshine
 
-These weather conditions contributed the most to predicting rainfall.
+These features provided useful information for predicting rainfall on the following day.
 
 ---
 
 # 💾 Saved Model
 
-The final trained model is stored as:
+The final trained model is stored in:
 
-```
+```text
 rain_prediction_model.pkl
 ```
 
-Additional preprocessing metadata is stored in:
+Additional model and preprocessing metadata is stored in:
 
-```
+```text
 model_meta.json
 ```
 
+These files are used by the Streamlit application during inference.
+
 ---
 
-# 🖥 Streamlit Application
+# 🖥️ Streamlit Application
 
-The trained model was deployed using **Streamlit**.
+The trained Machine Learning model was deployed using **Streamlit**.
 
 The application allows users to:
 
 - Enter weather measurements.
+- Submit the input data.
 - Predict whether it will rain tomorrow.
-- Display prediction results instantly.
+- Display the prediction result through an interactive interface.
 
 ---
 
@@ -182,85 +211,105 @@ The application allows users to:
 
 ## Home Page
 
-![Home](home.png)
+![Home Page](Screenshots/home.png)
 
 ---
 
 ## Prediction Result
 
-![Prediction](prediction.png)
+![Prediction Result](Screenshots/prediction.png)
 
 ---
 
 # 📁 Repository Structure
 
-```
+```text
 Rain-Prediction-ML
+│
+├── Documentation/
+│   └── RainPrediction_Documentation.pdf
+│
+├── Notebook/
+│   └── WEATHERAUS_FINAL_updated.ipynb
+│
+├── Screenshots/
+│   ├── home.png
+│   └── prediction.png
 │
 ├── app.py
 ├── rain_prediction_model.pkl
 ├── model_meta.json
 ├── requirements.txt
-├── RainPrediction_Documentation.pdf
-├── WEATHERAUS_FINAL_updated.ipynb
-├── home.png
-├── prediction.png
-└── README.md
+├── README.md
+└── LICENSE
 ```
 
 ---
 
-# ▶ Installation
+# 📄 Documentation
 
-Clone the repository
+The complete project documentation is available here:
+
+👉 [View Project Documentation](Documentation/RainPrediction_Documentation.pdf)
+
+The documentation provides a detailed explanation of the project workflow, preprocessing, Machine Learning models, evaluation, and deployment.
+
+---
+
+# ▶️ Installation
+
+## 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Rain-Prediction-ML.git
+git clone https://github.com/mohamed-tamer-UT/Rain-Prediction-ML.git
 ```
 
-Move into the project directory
+## 2. Move Into the Project Directory
 
 ```bash
 cd Rain-Prediction-ML
 ```
 
-Install dependencies
+## 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run Streamlit
+## 4. Run the Streamlit Application
 
 ```bash
 streamlit run app.py
 ```
 
+The application will then be available locally through the Streamlit server.
+
 ---
 
 # 📈 Results
 
-The selected model achieved strong predictive performance after:
+The selected model achieved strong predictive performance after applying:
 
 - Data Cleaning
 - Feature Engineering
-- Hyperparameter Tuning
+- Data Preprocessing
 - Model Comparison
+- Hyperparameter Tuning
 
-The deployment provides real-time inference through an interactive user interface.
+The final model was integrated into a Streamlit application to provide real-time rainfall predictions.
 
 ---
 
 # 🔮 Future Improvements
 
-Possible future enhancements include:
+Possible future improvements include:
 
-- Cloud deployment
-- Docker containerization
-- API development using FastAPI
-- Continuous model retraining
-- Real-time weather API integration
-- Advanced ensemble techniques
+- Advanced cloud deployment.
+- Docker containerization.
+- API development using FastAPI.
+- Continuous model retraining.
+- Real-time weather API integration.
+- Advanced ensemble techniques.
 
 ---
 
@@ -268,48 +317,12 @@ Possible future enhancements include:
 
 **Mohamed Tamer**
 
-NTI Creativa Innovation Hub Program
-
-Benha Branch
-
+NTI Creativa Innovation Hub Program  
+Benha Branch  
 Machine Learning Track
-
----
-
-# 📄 Documentation
-
-The complete project documentation is included in:
-
-```
-RainPrediction_Documentation.pdf
-```
 
 ---
 
 # ⭐ Support
 
 If you found this project useful, consider giving the repository a ⭐ on GitHub.
-
----
-
-# 🌧️ Rain Prediction ML
-
-A complete Machine Learning project developed during the NTI Creativa Innovation Hub Program.
-
-## 🚀 Live Demo
-
----
-
-## 📂 Dataset
-
-This project is built using the **WeatherAUS** dataset.
-
-**Dataset Source:**
-https://www.kaggle.com/datasets/trisha2094/weatheraus
-
-The dataset contains historical daily weather observations collected from multiple weather stations across Australia and is used to predict whether it will rain on the following day (`RainTomorrow`). :contentReference[oaicite:0]{index=0}
-👉 **Live Application**
-
-https://rain-prediction-ml-w4kov8lxpkvufsad3pnymf.streamlit.app/
-
----
